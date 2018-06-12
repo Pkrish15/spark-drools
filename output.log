@@ -1,0 +1,76 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+18/06/13 03:49:45 INFO SparkContext: Running Spark version 1.6.1
+18/06/13 03:49:47 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/06/13 03:49:47 WARN Utils: Your hostname, localhost.localdomain resolves to a loopback address: 127.0.0.1; using 192.168.43.93 instead (on interface wlp58s0)
+18/06/13 03:49:47 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+18/06/13 03:49:47 INFO SecurityManager: Changing view acls to: prakrish
+18/06/13 03:49:47 INFO SecurityManager: Changing modify acls to: prakrish
+18/06/13 03:49:47 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(prakrish); users with modify permissions: Set(prakrish)
+18/06/13 03:49:47 INFO Utils: Successfully started service 'sparkDriver' on port 41141.
+18/06/13 03:49:47 INFO Slf4jLogger: Slf4jLogger started
+18/06/13 03:49:47 INFO Remoting: Starting remoting
+18/06/13 03:49:47 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@192.168.43.93:45957]
+18/06/13 03:49:47 INFO Utils: Successfully started service 'sparkDriverActorSystem' on port 45957.
+18/06/13 03:49:47 INFO SparkEnv: Registering MapOutputTracker
+18/06/13 03:49:48 INFO SparkEnv: Registering BlockManagerMaster
+18/06/13 03:49:48 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-e393093a-8e55-40f2-9955-dd775836d4f1
+18/06/13 03:49:48 INFO MemoryStore: MemoryStore started with capacity 2.3 GB
+18/06/13 03:49:48 INFO SparkEnv: Registering OutputCommitCoordinator
+18/06/13 03:49:48 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+18/06/13 03:49:48 INFO SparkUI: Started SparkUI at http://192.168.43.93:4040
+18/06/13 03:49:48 INFO Executor: Starting executor ID driver on host localhost
+18/06/13 03:49:48 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35257.
+18/06/13 03:49:48 INFO NettyBlockTransferService: Server created on 35257
+18/06/13 03:49:48 INFO BlockManagerMaster: Trying to register BlockManager
+18/06/13 03:49:48 INFO BlockManagerMasterEndpoint: Registering block manager localhost:35257 with 2.3 GB RAM, BlockManagerId(driver, localhost, 35257)
+18/06/13 03:49:48 INFO BlockManagerMaster: Registered BlockManager
+18/06/13 03:49:49 INFO ClasspathKieProject: Found kmodule: file:/home/prakrish/Downloads/spark-drools-example-master/target/classes/META-INF/kmodule.xml
+18/06/13 03:49:49 WARN ClasspathKieProject: Unable to find pom.properties in /home/prakrish/Downloads/spark-drools-example-master/target/classes
+18/06/13 03:49:49 INFO ClasspathKieProject: Recursed up folders,  found and used pom.xml /home/prakrish/Downloads/spark-drools-example-master/pom.xml
+18/06/13 03:49:49 INFO KieRepositoryImpl: KieModule was added:FileKieModule[ ReleaseId=com.redhat.gpte:spark-drools:0.0.1-SNAPSHOTfile=/home/prakrish/Downloads/spark-drools-example-master/target/classes]
+18/06/13 03:49:50 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 78.3 KB, free 78.3 KB)
+18/06/13 03:49:50 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 13.0 KB, free 91.3 KB)
+18/06/13 03:49:50 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on localhost:35257 (size: 13.0 KB, free: 2.3 GB)
+18/06/13 03:49:50 INFO SparkContext: Created broadcast 0 from broadcast at App.java:46
+18/06/13 03:49:50 INFO SparkContext: Starting job: count at App.java:53
+18/06/13 03:49:50 INFO DAGScheduler: Got job 0 (count at App.java:53) with 4 output partitions
+18/06/13 03:49:50 INFO DAGScheduler: Final stage: ResultStage 0 (count at App.java:53)
+18/06/13 03:49:50 INFO DAGScheduler: Parents of final stage: List()
+18/06/13 03:49:50 INFO DAGScheduler: Missing parents: List()
+18/06/13 03:49:50 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[2] at filter at App.java:52), which has no missing parents
+18/06/13 03:49:50 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 3.5 KB, free 94.8 KB)
+18/06/13 03:49:50 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.0 KB, free 96.8 KB)
+18/06/13 03:49:50 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on localhost:35257 (size: 2.0 KB, free: 2.3 GB)
+18/06/13 03:49:50 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+18/06/13 03:49:50 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 0 (MapPartitionsRDD[2] at filter at App.java:52)
+18/06/13 03:49:50 INFO TaskSchedulerImpl: Adding task set 0.0 with 4 tasks
+18/06/13 03:49:50 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, partition 0,PROCESS_LOCAL, 2273 bytes)
+18/06/13 03:49:50 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, localhost, partition 1,PROCESS_LOCAL, 2301 bytes)
+18/06/13 03:49:50 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2, localhost, partition 2,PROCESS_LOCAL, 2264 bytes)
+18/06/13 03:49:50 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3, localhost, partition 3,PROCESS_LOCAL, 2309 bytes)
+18/06/13 03:49:50 INFO Executor: Running task 2.0 in stage 0.0 (TID 2)
+18/06/13 03:49:50 INFO Executor: Running task 3.0 in stage 0.0 (TID 3)
+18/06/13 03:49:50 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+18/06/13 03:49:50 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+18/06/13 03:49:51 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 953 bytes result sent to driver
+18/06/13 03:49:51 INFO Executor: Finished task 3.0 in stage 0.0 (TID 3). 953 bytes result sent to driver
+18/06/13 03:49:51 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 953 bytes result sent to driver
+18/06/13 03:49:51 INFO Executor: Finished task 2.0 in stage 0.0 (TID 2). 953 bytes result sent to driver
+18/06/13 03:49:51 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 181 ms on localhost (1/4)
+18/06/13 03:49:51 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 185 ms on localhost (2/4)
+18/06/13 03:49:51 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 187 ms on localhost (3/4)
+18/06/13 03:49:51 INFO DAGScheduler: ResultStage 0 (count at App.java:53) finished in 0.215 s
+18/06/13 03:49:51 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 208 ms on localhost (4/4)
+18/06/13 03:49:51 INFO DAGScheduler: Job 0 finished: count at App.java:53, took 0.276785 s
+**Number of applicants approved: 5**
+18/06/13 03:49:51 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+18/06/13 03:49:51 INFO SparkUI: Stopped Spark web UI at http://192.168.43.93:4040
+18/06/13 03:49:51 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+18/06/13 03:49:51 INFO MemoryStore: MemoryStore cleared
+18/06/13 03:49:51 INFO BlockManager: BlockManager stopped
+18/06/13 03:49:51 INFO BlockManagerMaster: BlockManagerMaster stopped
+18/06/13 03:49:51 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+18/06/13 03:49:51 INFO SparkContext: Successfully stopped SparkContext
+18/06/13 03:49:51 INFO RemoteActorRefProvider$RemotingTerminator: Shutting down remote daemon.
+18/06/13 03:49:51 INFO ShutdownHookManager: Shutdown hook called
+18/06/13 03:49:51 INFO ShutdownHookManager: Deleting directory /tmp/spark-fde105cf-3166-44f1-bfd1-6216f10fce4c
