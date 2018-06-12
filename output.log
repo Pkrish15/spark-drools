@@ -62,7 +62,7 @@ Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
 18/06/13 03:49:51 INFO DAGScheduler: ResultStage 0 (count at App.java:53) finished in 0.215 s
 18/06/13 03:49:51 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 208 ms on localhost (4/4)
 18/06/13 03:49:51 INFO DAGScheduler: Job 0 finished: count at App.java:53, took 0.276785 s
-**Number of applicants approved: 5**
+Number of applicants approved: 5
 18/06/13 03:49:51 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
 18/06/13 03:49:51 INFO SparkUI: Stopped Spark web UI at http://192.168.43.93:4040
 18/06/13 03:49:51 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
