@@ -19,5 +19,8 @@
     -p GIT_URI=https://github.com/Pkrish15/spark-drools \
     -p APP_FILE=spark-drools.jar       <br><br>
 
-12) You can find the Spark-Cluster Logs with Output as *"Number of Applicant Approved:5"* <br>
+12) You can find the Spark-Cluster Logs with Output as *"Number of Applicant Approved:5"* <br> 
+13) Please note the cluster will immediately terminates, once the job completes. You can observe the logs in the Openshift WebUI console.<br>
+14) To stop the deletion of cluster, We have to continously run the spark-job to maintain or else, we can use spring-boot to monitor the cluster progress. <br>
+15) Currently working on it.<br>
 
