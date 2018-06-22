@@ -35,7 +35,8 @@ e) Whenever the RedhatDecisionManager Admin Pushes the rules, we can make it ava
 f) Please check the code which is very simple and self explanatory.<br> <br>
 
 # What are the important concepts used in Apache Spark?
-g) BroadCast Variables.<br>
+g) BroadCast Variables - Advanced Concept in Spark.<br>
+h) SparkContext Parallelization - Beginner Level.<br>
 
 # BroadCast Variables in Spark
 16) Where "m" is the "rules" which is shared/broadcasted across the nodes.<br>
