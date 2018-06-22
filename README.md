@@ -35,6 +35,10 @@
 19) For example if you have 10 nodes cluster with 100 partitions (10 partitions per node), this Array will be distributed at least 100 times (10 times to each node).<br>
 20) If you use broadcast it will be distributed once per node using efficient p2p protocol.<br>
 
+# Important Point to use BroadCast Variables.
+21) Once we broadcasted the value to the nodes, we shouldn’t make changes to its value to make sure each node have exact same copy of data. The modified value might be sent to another node later that would give unexpected results.<br>
+
+
 
 
 
