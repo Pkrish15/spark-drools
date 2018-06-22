@@ -25,12 +25,17 @@
 15) Currently working on the 14th Point (ansible-playbook), Almost done! Will check in with additional code changes.<br>
 
 # Why you need Apache Spark for this usecase? Can't be a simple drools application or RHDM?
-a) Ofcourse, we can use the RedHatDecisionManager UI to upload the rules and can be dealth with any UI framework to display. <br>
-b) Apache Spark Performs sequences of Operations like Inputting the data -> Filter the data -> Tag the Data (Business Logics like loan defaulters ) -> Model -> as the useful business data. Hence huge amount of Java Code (rule logic)in tagging the data for writing/cleansing the data for different transactions and scenarios which is not necessary.<br>
-c) Instead you can use the RedHatDecisionManager which completes the seperates the business logic with the application scope and make the clear abstractions with business rules and application logic. Developer can easily maintain these rules in RedHatDecision Manager.<br>
-d) Apart from these Spark Provides several performance benefits by handling and parallelly processing huge amount of data and also in near-realtime transactions.<br>
-e) Whenever the RedhatDecisionManager Admin Pushes the rules, we can make it available as a decent data through spark job with UI.<br>
+a) Ofcourse, we can use the RedHatDecisionManager UI to upload the rules and can be dealth with any UI framework to display. <br><br>
+b) Apache Spark Performs sequences of Operations like Inputting the data -> Filter the data -> Tag the Data (Business Logics like loan defaulters ) -> Model -> as the useful business data. Hence huge amount of Java Code (rule logic)in tagging the data for writing/cleansing the data for different transactions and scenarios which is not necessary.<br><br>
+c) Instead you can use the RedHatDecisionManager which completes the seperates the business logic with the application scope and make the clear abstractions with business rules and application logic. Developer can easily maintain these rules in RedHatDecision Manager.<br><br>
+d) Apart from these Spark Provides several performance benefits by handling and parallelly processing huge amount of data and also in near-realtime transactions.<br><br>
+e) Whenever the RedhatDecisionManager Admin Pushes the rules, we can make it available as a decent data through spark job with UI.<br><br>
 
+# How can it be performed?
+f) Please check the code which is very simple and self explanatory.<br> <br>
+
+# What are the important concepts used in Apache Spark?
+g) BroadCast Variables.<br>
 
 # BroadCast Variables in Spark
 16) Where "m" is the "rules" which is shared/broadcasted across the nodes.<br>
