@@ -37,7 +37,7 @@ public class App {
       new Applicant(9,  "Julie", "Dreyfus",20000, 721),
       new Applicant(10, "Jason", "Alexandar", 25000, 590)
     );
-
+    //Default 4 threads will be invoked, if it set to local[*], local[2] 2 threads
     SparkConf conf = new SparkConf().setAppName("Simple Application").setMaster("local[*]");
     JavaSparkContext sc = new JavaSparkContext(conf);
 
@@ -50,9 +50,10 @@ public class App {
 
     long numApproved = applicants.map( a -> applyRules(broadcastRules.value(), a) )
                                  .filter( a -> a.isApproved() )
-                                 .count();
+                                 .count();  //First Action Performed on Spark
 
     System.out.println("Number of applicants approved: " + numApproved);
+    applicants.saveAsTextFile("com.redhat.gpte"); // 2nd Action is Performed on this Job to Save the File.
     sc.close();
   }
   
