@@ -25,32 +25,32 @@
 15) Currently working on the 14th Point (ansible-playbook), Almost done! Will check in with additional code changes.<br>
 
 # Why you need Apache Spark for this usecase? Can't be a simple drools application or RHDM?
-a) Ofcourse, we can use the RedHatDecisionManager UI to upload the rules and can be dealth with any UI framework to display. <br><br>
-b) Apache Spark Performs sequences of Operations like Inputting the data -> Filter the data -> Tag the Data (Business Logics like loan defaulters ) -> Model -> as the useful business data. Hence huge amount of Java Code (rule logic)in tagging the data for writing/cleansing the data for different transactions and scenarios which is not necessary.<br><br>
-c) Instead you can use the RedHatDecisionManager which completes the seperates the business logic with the application scope and make the clear abstractions with business rules and application logic. Developer can easily maintain these rules in RedHatDecision Manager.<br><br>
-d) Apart from these Spark Provides several performance benefits by handling and parallelly processing huge amount of data and also in near-realtime transactions.<br><br>
-e) Whenever the RedhatDecisionManager Admin Pushes the rules, we can make it available as a decent data through spark job with UI.<br><br>
+16) Ofcourse, we can use the RedHatDecisionManager UI to upload the rules and can be dealth with any UI framework to display. <br><br>
+17) Apache Spark Performs sequences of Operations like Inputting the data -> Filter the data -> Tag the Data (Business Logics like loan defaulters ) -> Model -> as the useful business data. Hence huge amount of Java Code (rule logic)in tagging the data for writing/cleansing the data for different transactions and scenarios which is not necessary.<br><br>
+18) Instead you can use the RedHatDecisionManager which completes the seperates the business logic with the application scope and make the clear abstractions with business rules and application logic. Developer can easily maintain these rules in RedHatDecision Manager.<br><br>
+19) Apart from these Spark Provides several performance benefits by handling and parallelly processing huge amount of data and also in near-realtime transactions.<br><br>
+20) Whenever the RedhatDecisionManager Admin Pushes the rules, we can make it available as a decent data through spark job with UI.<br><br>
 
 # How can it be performed?
-f) Please check the code which is very simple and self explanatory.<br> <br>
+21) Please check the code which is very simple and self explanatory.<br> <br>
 
 # What are the important concepts used in Apache Spark?
-g) BroadCast Variables - Advanced Concept in Spark.<br>
-h) SparkContext Parallelization - Beginner Level.<br>
+22) BroadCast Variables - Advanced Concept in Spark.<br>
+23) SparkContext Parallelization - Beginner Level.<br>
 
 # BroadCast Variables in Spark
-16) Where "m" is the "rules" which is shared/broadcasted across the nodes.<br>
+24) Where "m" is the "rules" which is shared/broadcasted across the nodes.<br>
 ![alt text](https://github.com/Pkrish15/spark-drools/blob/master/Screenshot%20from%202018-06-22%2014-42-22.png)<br>
 
 # When to use BroadCast Variables in Spark
-17) Before running each tasks on the available executors, Spark computes the task’s closure. The closure is those variables and methods which must be visible for the executor to perform its computations on the RDD.<br>
+25) Before running each tasks on the available executors, Spark computes the task’s closure. The closure is those variables and methods which must be visible for the executor to perform its computations on the RDD.<br>
 
-18) If you have huge array that is accessed from Spark Closures, for example some reference data, this array will be shipped to each spark node with closure. <br>
-19) For example if you have 10 nodes cluster with 100 partitions (10 partitions per node), this Array will be distributed at least 100 times (10 times to each node).<br>
-20) If you use broadcast it will be distributed once per node using efficient p2p protocol.<br>
+26) If you have huge array that is accessed from Spark Closures, for example some reference data, this array will be shipped to each spark node with closure. <br>
+27) For example if you have 10 nodes cluster with 100 partitions (10 partitions per node), this Array will be distributed at least 100 times (10 times to each node).<br>
+28) If you use broadcast it will be distributed once per node using efficient p2p protocol.<br>
 
 # Important Point to use BroadCast Variables.
-21) Once we broadcasted the value to the nodes, we shouldn’t make changes to its value to make sure each node have exact same copy of data. The modified value might be sent to another node later that would give unexpected results.<br>
+29) Once we broadcasted the value to the nodes, we shouldn’t make changes to its value to make sure each node have exact same copy of data. The modified value might be sent to another node later that would give unexpected results.<br>
 
 
 
