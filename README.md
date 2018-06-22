@@ -25,6 +25,6 @@
 15) Currently working on the 14th Point (ansible-playbook), Almost done! Will check in with additional code changes.<br>
 
 # BroadCast Variables in Spark
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/Pkrish15/spark-drools/blob/master/Screenshot%20from%202018-06-22%2014-42-22.png)
 
 
