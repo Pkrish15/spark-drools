@@ -24,3 +24,7 @@
 14) To stop the deletion of cluster, We have to continously run the spark-job to maintain or else, we can use spring-boot to monitor the cluster progress. <br>
 15) Currently working on the 14th Point (ansible-playbook), Almost done! Will check in with additional code changes.<br>
 
+# BroadCast Variables in Spark
+![alt text](http://url/to/img.png)
+
+
