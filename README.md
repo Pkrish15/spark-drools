@@ -32,16 +32,9 @@
 17) Before running each tasks on the available executors, Spark computes the task’s closure. The closure is those variables and methods which must be visible for the executor to perform its computations on the RDD.<br>
 
 18) If you have huge array that is accessed from Spark Closures, for example some reference data, this array will be shipped to each spark node with closure. <br>
-For example if you have 10 nodes cluster with 100 partitions (10 partitions per node), this Array will be distributed at least 100 times (10 times to each node).
-If you use broadcast it will be distributed once per node using efficient p2p protocol.
-val array: Array[Int] = ??? // some huge array
-val broadcasted = sc.broadcast(array)
-And some RDD
-val rdd: RDD[Int] = ???
-In this case array will be shipped with closure each time
-rdd.map(i => array.contains(i))
-and with broadcast you'll get huge performance benefit
-rdd.map(i => broadcasted.value.contains(i))
+19) For example if you have 10 nodes cluster with 100 partitions (10 partitions per node), this Array will be distributed at least 100 times (10 times to each node).<br>
+20) If you use broadcast it will be distributed once per node using efficient p2p protocol.<br>
+
 
 
 
