@@ -21,8 +21,7 @@
 
 12) You can find the Spark-Cluster Logs with Output as *"Number of Applicant Approved:5"* <br> 
 13) Please note the cluster will immediately terminates, once the job completes. You can observe the logs in the Openshift WebUI console.<br>
-14) To stop the deletion of cluster, We have to continously run the spark-job to maintain or else, we can use spring-boot to monitor the cluster progress. <br>
-15) Currently working on the 14th Point (ansible-playbook), Almost done! Will check in with additional code changes.<br>
+
 
 # Why you need Apache Spark for this usecase? Can't be a simple drools application or RHDM?
 16) Ofcourse, we can use the RedHatDecisionManager UI to upload the rules and can be dealth with any UI framework to display. <br><br>
